@@ -14,7 +14,7 @@ function App() {
   // Obtener películas
   useEffect(() => {
 
-    fetch('http://localhost:4000/api/peliculas')
+    fetch('https://peliculas-ia-1ajd.onrender.com/api/peliculas')
       .then(res => res.json())
       .then(data => {
 
@@ -51,7 +51,7 @@ function App() {
     try {
 
       const response = await fetch(
-        'http://localhost:4000/api/recomendaciones',
+        'https://peliculas-ia-1ajd.onrender.com/api/recomendaciones',
         {
           method: 'POST',
 
